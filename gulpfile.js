@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task('stylus', function () {
     return gulp.src(source+'main.styl')
+	.pipe(plugins.plumber())
         .pipe(plugins.stylus({
             use: [typographic(), nib(), rupture()]
         }))
