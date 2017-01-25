@@ -17,10 +17,12 @@ gulp.task('stylus', function () {
         .pipe(gulp.dest(dest))
         .pipe(plugins.rename({suffix: '.min'}))
         .pipe(plugins.cssnano())
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(dest))
+	.pipe(plugins.livereload());
 });
 
 gulp.task('watch', function () {
+	plugins.livereload.listen();
 	gulp.watch(source+'*.styl', ['stylus']);
 });
 
