@@ -1,0 +1,23 @@
+{
+  "name": "gulp-stylus-template",
+  "version": "1.0.0",
+  "description": "Basic template for a new project with Gulp as a task runner and Stylus as a preprocessor",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Sébastien Pereda <sebastien.pereda@gmail.com> (http://www.bastoche.fr)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-stylus": "latest",
+    "nib": "latest",
+    "rupture": "latest",
+    "typographic": "latest"
+  }
+}
